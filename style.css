@@ -1,12 +1,12 @@
 /********** Base styles **********/
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-size: 100%;
 }
 h1 {
   margin-bottom: 15px;
-}
-div {
-  margin: 15px;
 }
 
 /* Simple Responsive Framework. */
@@ -17,7 +17,6 @@ div {
 @media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -60,7 +59,6 @@ div {
 @media (min-width: 992px) and (max-width: 1199px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-md-1 {
     width: 8.33%;
@@ -102,50 +100,57 @@ div {
 
 /********* My Custom CSS *********/
 
+/*Menu title*/
 #OurMenu {
     font-size: 175%;
     color: Orange;
     text-align: Center;
     }
 
-.FoodType {
-    font-size: 125%;
-    color: black;
-}
-
-body div {
+/*Menu block background*/
+#Chicken, #Beef, #Sushi {
+    font-size: 1.5em;
     background-color: Grey;
     opacity: 0.8;
+    margin: 15px;
     border: 1px solid black;
 }
 
-section {
-  clear: left;
-}
-
+/*Chicken title box floated right*/
 .Chicken {
     background-color: Yellow;
     height: auto;
     width: 150px;
     border: 1px solid black;
     float: right;
-    clear: left;
 }
 
+#ChickenPara {
+    clear: both;
+}
+
+/*Beef title box floated right*/
 .Beef {
     background-color: Red;
     height: auto;
     width: 150px;
     border: 1px solid black;
     float: right;
-    clear: left;
 }
 
+#BeefPara {
+    clear: both;
+}
+
+/*Sushi title box floated right*/
 .Sushi {
     background-color: Green;
     height: auto;
     width: 150px;
     border: 1px solid black;
     float: right;
-    clear: left;
+}
+
+#SushiPara {
+    clear: both;
 }
